@@ -1,7 +1,8 @@
 class Monster:
-    def __init__(self, name: str, cr: float, hp: int, ac: int, speed: int, stats: dict, abilities: dict, actions: dict, drop_table: dict):
+    def __init__(self, name: str, cr: float, exp: int, hp: int, ac: int, speed: int, stats: dict, abilities: dict, actions: dict, drop_table: dict):
         self.name = name                #The name of the monster
         self.cr = cr                    #The challenge rating of the monster
+        self.exp = exp                  #The experience reward for killing the monster
         self.hp = hp                    #The health (Hit Points) of the monster
         self.ac = ac                    #Armor class of the monster
         self.speed = speed              #The amount the monster can move per round of combat
